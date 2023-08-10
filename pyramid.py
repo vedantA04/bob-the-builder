@@ -1,6 +1,6 @@
 f = open("test-pyramid.gcode", "w")
-init_X = 190
-fin_X = 130
+init_X = 210
+fin_X = 150
 init_Y = 100
 fin_Y = 160
 init_Z = 96.5
