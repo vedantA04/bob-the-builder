@@ -11,7 +11,7 @@ for i in range(1, 100):
         f.write("; layer" + str(i+1) + "\n")
         f.write("G0 Z" + str(init_Z) + "\n")
         f.write("G92 E0\n")
-        f.write("G1 E3 F150\n")
+        f.write("G1 E4 F150\n")
         f.write("G0 X315 F500\n")
         f.write("G0 Z" + str(init_Z-3) + "\n")
         temp_x = init_X
@@ -33,10 +33,10 @@ for i in range(1, 100):
                 break
         f.write("M107\n")
         f.write("G0 X0 Y0 F2000\n")
-        init_X = init_X - 6
-        fin_X = fin_X + 6
-        init_Y = init_Y + 6
-        fin_Y = fin_Y - 6
+        init_X = init_X - 3
+        fin_X = fin_X + 3
+        init_Y = init_Y + 3
+        fin_Y = fin_Y - 3
         init_Z = init_Z - 3
 
 f.write("; final layer\n")
