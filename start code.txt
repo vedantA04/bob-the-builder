@@ -2,14 +2,18 @@ G28 X Y Z
 G0 Z98;lift main plate
 ;layer 0
 G92 E0;
-G1 E4 F150;lift powder plate
-G0 X315 F500;spread powder
-G0 Z96;lower main plate
+G1 E3.5 F150;lift powder plate
+G0 X315 F1000;spread powder
+G0 Z93;lower main plate
+G1 E-3.5 F150
 G0 X0 Y0 F2000;
+G1 E3.5 F150
 ;layer 1
 G0 Z97.25;lift main plate
 G92 E0;
-G1 E4 F150;lift powder plate
-G0 X315 F500;spread powder
-G0 Z95.25;lower main plate
+G1 E3.5 F150;lift powder plate
+G0 X315 F1000;spread powder
+G0 Z92.25;lower main plate
+G1 E-3.5 F150
 G0 X0 Y0 F2000;
+G1 E3.5 F150
